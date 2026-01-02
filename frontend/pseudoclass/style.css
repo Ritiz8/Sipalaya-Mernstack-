@@ -1,0 +1,27 @@
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color: cadetblue;
+}
+a:active{
+    color: palevioletred;
+}
+p{
+    position: relative;
+}
+p::before{
+    columns: "";
+    position: absolute;
+    /* top: -2px;
+    height: 3px;
+    width: 50px;
+    background-color: brown; */
+
+}
+div p{
+    color: rebeccapurple;
+}
