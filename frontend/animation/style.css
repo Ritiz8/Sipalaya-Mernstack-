@@ -1,0 +1,25 @@
+button{
+    width: 100px;
+    transition-property: width;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in;
+    
+}
+button:hover{
+    width: 300px;
+    background-color: chocolate;
+}
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid burlywood;
+    margin: auto;
+    transition: transform 2s;
+}
+#box:hover{
+    /* transform: translateX(400px);
+    transition: transform 2s;
+    transform: scalex(2);
+    transition: transform 2s; */
+    transform: rotatex(45deg);
+}
