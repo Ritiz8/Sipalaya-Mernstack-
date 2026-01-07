@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
             <div class="left">
-                <h1>My portfolio</h1>
-                </div>
+                <h2>My portfolio</h2>
+            </div>
             <div class="right">
                 <ul>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Service</li>
-                    <li>Portfolio</li>
-                    <li>Testimonials</li>
-                    <li>Contact</li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Testimonial</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -27,42 +29,129 @@
     <section>
         <div class="p1">
             <ul>
-                <li><h1>HELLO,IM RITIZ</h1></li>
+                <li>
+                    <h1>HELLO,IM RITIZ</h1>
+                </li>
                 <br>
-                <li><h4>Aspiring Web Developer</h2></li>
-                    <br>
+                <li>
+                    <h4>Aspiring Web Developer</h2>
+                </li>
+                <br>
                 <li><button class="b1">Explore my work</button></li>
             </ul>
-            
+
         </div>
-        
+
     </section>
+
+    <section class="about">
+        <h2 class="heading">About Me</h2>
+        <div id="about">
+            <img src="https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg" alt="about me" width="200">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sint, quasi quidem placeat numquam
+                culpa ducimus modi explicabo nulla dignissimos, nam, eos eveniet autem sapiente aspernatur. Qui neque
+                provident omnis.</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2 class="heading">My Skills</h2>
+        <div id="skills">
+            <p>HTML</p>
+            <div class="outerlayer">
+                <div class="innerlayer" style="width: 90%;"></div>
+            </div>
+            <p>CSS</p>
+            <div class="outerlayer">
+                <div class="innerlayer" style="width: 80%;"></div>
+            </div>
+            <p>JavaScript</p>
+            <div class="outerlayer">
+                <div class="innerlayer" style="width: 70%;"></div>
+            </div>
+            <p>Responsive design</p>
+            <div class="outerlayer">
+                <div class="innerlayer" style="width: 75%;"></div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <h2 class="heading">Services</h2>
+        <div id="services">
+            <div class="box">
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident assumenda deleniti veniam,
+                    dolor, sunt temporibus exercitationem distinctio mollitia repellendus in dignissimos harum adipisci
+                    accusamus ab, quas numquam natus vero.</p>
+            </div>
+            <div class="box">
+                <h3>Responsive Layouts</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident assumenda deleniti veniam,
+                    dolor, sunt temporibus exercitationem distinctio mollitia repellendus in dignissimos harum adipisci
+                    accusamus ab, quas numquam natus vero.</p>
+            </div>
+            <div class="box">
+                <h3>UI/UX</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident assumenda deleniti veniam,
+                    dolor, sunt temporibus exercitationem distinctio mollitia repellendus in dignissimos harum adipisci
+                    accusamus ab, quas numquam natus vero.</p>
+            </div>
+        </div>
+    </section>
+    <section class="mywork">
+        <h2 class="heading">My work</h2>
+        <div id="mywork">
+            <div class="box">
+                <img src="backgroung.jpg" alt="">
+                <h3>Work1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident assumenda deleniti veniam,
+                    dolor, sunt temporibus exercitationem distinctio mollitia repellendus in dignissimos harum adipisci
+                    accusamus ab, quas numquam natus vero.</p>
+            </div>
+            <div class="box">
+                <img src="backgroung.jpg" alt="">
+                <h3>work2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident assumenda deleniti veniam,
+                    dolor, sunt temporibus exercitationem distinctio mollitia repellendus in dignissimos harum adipisci
+                    accusamus ab, quas numquam natus vero.</p>
+            </div>
+            <div class="box">
+                <img src="backgroung.jpg" alt="">
+                <h3>Work3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident assumenda deleniti veniam,
+                    dolor, sunt temporibus exercitationem distinctio mollitia repellendus in dignissimos harum adipisci
+                    accusamus ab, quas numquam natus vero.</p>
+            </div>
+        </div>
+    </section>
+
     <br>
     <br>
-    <h1 style="text-align: center;" ;">Contact ME</h1>
+    <h2 class="heading"" ;">Contact ME</h2>
     <br>
     <div class="container">
-    <form action="">
-           
-            
-            <input type="text" placeholder="Name" name="nm" id="nm" required'/>
-           
-           
-            <input type="text" placeholder="Email" name="eml" id="eml" required'/>
-            
-            
-            <input type="text" placeholder="Message" name="msg" id="msg" required'/>
-         
-            <hr/>
-            <button class="btn" type="submit">Submit</button>
-        
-    </form>
-    </div>
-    
-    
-    
+        <form action="">
 
-    
-    
+
+            <input type="text" placeholder="Name" name="nm" id="nm" required' />
+
+
+            <input type="text" placeholder="Email" name="eml" id="eml" required' />
+
+
+            <input type="text" placeholder="Message" name="msg" id="msg" required' />
+
+            <hr />
+            <button class="btn" type="submit">Submit</button>
+
+        </form>
+    </div>
+
+
+
+
+
+
 </body>
+
 </html>
