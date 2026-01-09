@@ -57,8 +57,58 @@ alert("hello from external js");
 // let u1 = Symbol("hello");
 // let v1 = Symbol("hello");
 
+//quirks bbugs of js hich we use
 
+// type coerction : data type is automatically converted
+// let num1 = 5;
+// let num2 = 7;
 
+// arithmetic operator(+,-,*,/,*,%,**)
+// assignment operator(=,+=,-=,)
+// compaision operator(<,>,<=,>=,==,!=,===,!==)
+// logical operator(&&,||,!)
+
+// unary operator (++,--,)increment and decrement
+// ternary operator (conditional)
+// ()?"" : ""
+
+// falsy: aflse,0,null,undefined,document.all,""
+// if(-1){
+//   //code
+// }
+
+// num1=-4;
+// if(num1 >0){
+//     if(num1%2==0 && num1!=0 ){
+//     console.log("its  positive even number");
+//     }
+//     else{
+//         console.log("its positivvve 0dd");
+//     }
+// }
+// else if(num1 < 0){
+//     if(num1%2==0 && num1!=0 ){
+//     console.log("its  negative even number");
+//     }
+//     else{
+//         console.log("its negative odd");
+//     }
+// }    
+
+// if(num1>0 && num1%2==0)
+let day=2;
+switch(day)
+{
+    case 1:
+    console.log("sunday");
+    break;
+    case 2:
+    console.log("Monday");
+    break;
+    case 3:
+    console.log("Default");
+    break;
+}
 
 
 
