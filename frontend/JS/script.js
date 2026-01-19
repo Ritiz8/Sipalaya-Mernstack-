@@ -1,4 +1,4 @@
-alert("hello from external js");
+// alert("hello from external js");
 //variales always starts ith letters or _ or $
 //vaiales cannot contain wwhitespace
 //keywords cannot be used as var name
@@ -96,22 +96,67 @@ alert("hello from external js");
 // }    
 
 // if(num1>0 && num1%2==0)
-let day=2;
-switch(day)
-{
-    case 1:
-    console.log("sunday");
-    break;
-    case 2:
-    console.log("Monday");
-    break;
-    case 3:
-    console.log("Default");
-    break;
-}
-
-
+// let day=2;
+// switch(day)
+// {
+//     case 1:
+//     console.log("sunday");
+//     break;
+//     case 2:
+//     console.log("Monday");
+//     break;
+//     case 3:
+//     console.log("Default");
+//     break;
+// }
 
 
 // non-primitive=> directly copy gardainam (){}{}
 // array,Object,function
+
+
+
+
+// first class function
+// function xyz(a){
+//     console.log("hello");
+// }
+// function xyz(a){
+//     a();
+// }
+// xyz(abc);
+
+// function sum(a,b){
+//     return a+b;
+// }
+// let val =sum(1,8);
+// console.log(val);
+
+// higher order function : takes function as argument
+// or function that returns other function
+
+// pure and impure function
+
+// let val = 45;
+
+// function xyz(){
+//     console.log(val);
+// }
+// xyz();
+
+// function abc(){
+//     console.log(++val);
+// }
+// abc();
+
+// closures : functions that returns another function and can access the return value as 
+
+function abc(){
+    let a = 45;
+    function xyz(){
+        console.log(++a);
+    }
+    return xyz;
+}
+let fn= abc();
+fn();
