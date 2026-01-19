@@ -151,12 +151,18 @@
 
 // closures : functions that returns another function and can access the return value as 
 
-function abc(){
-    let a = 45;
-    function xyz(){
-        console.log(++a);
-    }
-    return xyz;
-}
-let fn= abc();
-fn();
+// function abc(){
+//     let a = 45;
+//     function xyz(){
+//         console.log(++a);
+//     }
+//     return xyz;
+// }
+// let fn= abc();
+// fn();
+
+// IIFE(Immediately invoaked function expression)
+
+// (function abc(){
+//     console.log("abc")
+// })();
