@@ -167,3 +167,52 @@
 //     console.log("abc")
 // })();
 // xd
+
+// Array : array is a collection of different type of data
+// let marks =[23, 45, 87, 34, 53, "a", true, null, undefined]
+// let numbers = [1,2,3,4,5,6,7,8,9,10];
+// console.log(numbers[5])
+// numbers[5]=653;
+// properties
+// numbers.length;
+// console.log(numbers.length);
+
+// // method
+// //at
+
+// //push and pop push add elements in array and pop removes the last element from array
+// numbers.push(132);
+
+// shift and unshift add and remove element from beginning of the array
+// numbers.unshift(165,785,37);
+
+// slice : gives new array from the main array
+
+//splice  add or remove elements from middler of the array
+// numbers.splice(3,1,3446,3,876);
+
+// numbers.sort(function(a,b){
+//     return a-b;
+// });
+
+// numbers.forEach((value,index, array)=>{
+//     console.log(value);
+// })
+
+// let results = numbers.map(function (value,index){
+//         console.log(value, index);
+//     return value * 2;
+// })
+
+
+// let results = numbers.filter(function(value,index){
+//     if (value % 2 == 0){
+//         return value;
+//     }
+// });
+
+
+let numbers = [1,2,3,4,5];
+let sum = numbers.reduce(function (prev, curr){
+    return prev + curr;
+})
