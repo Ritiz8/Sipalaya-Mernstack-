@@ -210,9 +210,81 @@
 //         return value;
 //     }
 // });
+// let numbers = [1,2,3,4,5];
+// let sum = numbers.reduce(function (prev, curr){
+//     return prev + curr;
+// })
+// let numbers = [1,2,3,4,5,6,7,8,9,10]
+// let results = numbers.filter(function(value,index){
+//     if (value > 5){
+//         return value;
+//     }
+// });
+
+// let values= [2,4,6,8];
+// let results = values.reduce(function(prev,curr){
+//     return prev + curr;
+// })
+
+// let result = values.find((value,index)=>{
+//    return  value > 5
+// })
+    
+// let result = values.every((value) =>{
+//     return value < 10
+//     ;
+// })
+
+// let numbers = [1,2,3,4,5,6,7,12,4,547,6,4,52];
+// let newArr= [...numbers]
+
+// copying arrary
+// let arr1=[1,3,5,7]
+// let arr2=[2,4,6,8]
+// let arr3=[...arr1,...arr2]  // ... spread operator
+
+//array destructuring :
+// let arr1 =[1,3,5,7,9]
+// let [a,b,c,d,e]=arr1;
 
 
-let numbers = [1,2,3,4,5];
-let sum = numbers.reduce(function (prev, curr){
-    return prev + curr;
-})
+const user = {
+  Name: "John",
+  addrerss:{
+    city: "ktm",
+    location: {
+        lat:89,
+        lon:65
+    }
+  },
+  age: 50,
+  skills:["java", "python", "c"],
+  eyeColor: "blue",
+  sayHello: function(){
+    console.log("hello");
+  }
+}
+
+const {Name, age}= user;
+
+let arr=[1,35,6,89];
+// for(i=0;i<arr.length;i++){
+//     console.log(arr[i])
+// }
+
+// for (const value of arr) {   // for array
+//     console.log(value)
+// }
+// for (const key in user) {     //for oject
+//     console.log(user[key]);
+    
+// }
+
+// let keys = Object.keys(user);
+// for (const values of keys) {
+//     console.log(user[values])
+// }
+
+// let u1={...user}
+// let newoj=JSON.parse(JSON.stringify(user)) //deepclone
+
