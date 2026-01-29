@@ -248,26 +248,26 @@
 // let [a,b,c,d,e]=arr1;
 
 
-const user = {
-  Name: "John",
-  addrerss:{
-    city: "ktm",
-    location: {
-        lat:89,
-        lon:65
-    }
-  },
-  age: 50,
-  skills:["java", "python", "c"],
-  eyeColor: "blue",
-  sayHello: function(){
-    console.log("hello");
-  }
-}
+// const user = {
+//   Name: "John",
+//   addrerss:{
+//     city: "ktm",
+//     location: {
+//         lat:89,
+//         lon:65
+//     }
+//   },
+//   age: 50,
+//   skills:["java", "python", "c"],
+//   eyeColor: "blue",
+//   sayHello: function(){
+//     console.log("hello");
+//   }
+// }
 
-const {Name, age}= user;
+// const {Name, age}= user;
 
-let arr=[1,35,6,89];
+// let arr=[1,35,6,89];
 // for(i=0;i<arr.length;i++){
 //     console.log(arr[i])
 // }
@@ -287,4 +287,173 @@ let arr=[1,35,6,89];
 
 // let u1={...user}
 // let newoj=JSON.parse(JSON.stringify(user)) //deepclone
+
+
+//asynchronos java script
+
+// setTimeout(() => {
+//   console.log("hello class");
+// }, 2000);
+// let count=1;
+// let val = setInterval(()=>{
+//   count++;
+  
+//   if (count > 5){
+//     clearInterval(val); 
+// }
+// console.log("hello")
+// }, 2000)
+
+// function getUserProfile(user,fn){
+//   setTimeout(()=>{
+//     console.log("user details fetched")
+//     fn({
+//       id:1, name:"harry", email:"harry@mail.com"
+//     });
+//   },3000)
+// }
+// function getPostdetails(id,fn)
+
+// getUserProfile("harry", function(data){
+//   console.log(data)
+//   console
+// } )
+
+// promises
+// let pr = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     let value = Math.floor(Math.random() * 10);
+
+//     if (value > 5) {
+//       resolve(`resolved with value ${value}`);
+//     } else {
+//       reject(`rejected with value ${value}`);
+//     }
+//   }, 1000);
+// });
+
+// // pr.then(function(value){
+// //   console.log(value)
+// // }).catch(function(value){
+// //   console.log(value)
+// // })
+
+// async function abc() {
+//   try {
+//     const res = await pr;
+//     console.log(res);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// // call the function
+// abc();
+
+// API
+
+// fetch("https://dummyjson.com/users")
+// async function getUsers() {
+//   try {
+//     const res = await fetch("https://dummyjson.com/users");
+//     const data = await res.json();
+//     console.log(data.users);
+//     data.users.map((user) => {
+//       let h1 = document.createElement("h1");
+//       let img = document.createElement("img")
+
+//     })
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// getUsers()
+
+// let pr = new Promise(function (resolve, reject) {
+//   setTimeout(() => {
+//     let value = Math.floor(Math.random() * 10);
+//     if (value > 5) {
+//       resolve(`resolved with value ${value}`);
+//     } else {
+//       reject(`rejected with value ${value}`);
+//     }
+//   }, 1000);
+// });
+
+// pr.then(function (value) {
+//   console.log(value);
+// }).catch(function (value) {
+//   console.log(value);
+// });
+
+// async function abc() {
+//   try {
+//     const res = await pr;
+//     console.log(res);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// abc();
+
+// fetch("https://dummyjson.com/users")
+//   .then(function (rawData) {
+//     return rawData.json();
+//   })
+//   .then(function (data) {
+//     console.log(data);
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   });
+
+// async function getUsers() {
+//   try {
+//     const res = await fetch("https://dummyjson.com/users");
+//     const data = await res.json();
+//     console.log(data.users);
+//     data.users.forEach((user) => {
+//       let h1 = document.createElement("h1");
+//       let img = document.createElement("img");
+//       img.setAttribute("src", user.image);
+//       h1.textContent = `${user.firstName}`;
+//       document.body.append(img);
+//       document.body.append(h1);
+//     });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// getUsers();
+
+// function abc(){
+//     console.log(this);
+
+// }
+// abc();
+
+// let user ={
+//     name: "john",
+//     age: 23,
+//     sayhello : function(){
+//         console.log(this,age)
+//     }
+// }
+// user.sayhello();
+
+// document.querySelector("h1").addEventListener("click",function () {
+//     this.style.color = "red";
+// });
+
+// class User{
+//     constructor(name,age){
+//         this.name=name;
+//         this.age=age;
+//     }
+//     sayname(){
+//         console.log(this.name)
+//     }
+// }
+// let user1 = new User("harry", 50);
 
