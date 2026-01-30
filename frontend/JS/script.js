@@ -456,4 +456,3 @@
 //     }
 // }
 // let user1 = new User("harry", 50);
-
